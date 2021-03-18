@@ -1,0 +1,150 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+.header-container
+    
+    .inner-container
+        display: flex
+        justify-content: space-between
+        background-color: #2E2E58
+        align-items: center
+        height: 70px
+        @media screen and ( max-width: 454px )
+            justify-content: center
+        .brand
+            display: flex
+            align-items: center
+            @media screen and ( max-width: 454px )
+                display: none
+                
+            a
+                color: white
+                text-decoration: none
+                font-size: 22px
+                padding-left: 22px
+                
+            
+        .header-menu
+            display: flex
+            list-style-type: none
+            align-items: center
+            margin: 0
+            padding: 0
+            padding-right: 22px
+            li
+                margin-left: 10px
+                &:last-child
+                    background-color: #277e44
+                    padding: 5px 3px
+                    border-radius: 10px
+                    a
+                        color: black
+                        @media screen and ( max-width: 366px )
+                            font-size: 14px
+                        i
+                            font-size: 15px
+                            margin-right: 2px
+                        
+                a
+                    text-decoration: none
+                    color: white
+                    font-size: 18px
+.add-page
+    display: flex
+    flex-direction: column
+    margin-top: 30px
+    
+    .search-input
+        width: 70%
+        margin: 0 auto
+        input
+            background-color: #2E2E58
+            width: 100%
+            color: white
+    .results
+        width: 70%
+        margin: 20px auto
+        list-style: none
+        li
+            margin-bottom: 15px
+        .result-card
+            display: flex
+            .poster
+                img
+        .info
+            margin-left: 10px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .info-header
+                .title
+.movie-page
+    padding-left: 22px
+    margin-top: 30px
+    
+    .movie-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width: 515px )
+            flex-direction: column
+        @media screen and ( max-width: 449px )
+            align-items: center
+            
+            
+        @media screen and ( max-width: 731px )
+            // justify-content: center
+            margin: 0 auto
+            
+        .heading
+            @media screen and ( max-width: 662px )
+                    font-size: 18px
+        .count
+            margin-right: 22px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 14px
+            color: white
+            background-color: green
+            border: none
+            border-radius: 10px
+            width: 200px
+            height: 40px           
+    .no-movie
+        display: flex
+        justify-content: center
+    .movie-grid
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: 20px
+        @media screen and ( min-width: 1024px )
+            justify-content: flex-start
+        .movie-card
+            margin-right: 10px
+            position: relative
+            margin-bottom: 10px
+            
+            img
+                height: 200px
+                border-radius: 5px
+    
+            .inner-card-controls
+                position: absolute
+                left: 50%
+                bottom: 20px
+                transform: translateX(-50%)
+                display: flex
+                button 
+                    &:hover
+                        background-color: black
+                
+
+
+    
+
+                    
+                        
+
